@@ -1,7 +1,7 @@
 ﻿
 namespace quizApp
 {
-    partial class Form1
+    partial class mainPage
     {
         /// <summary>
         /// Required designer variable.
@@ -55,15 +55,16 @@ namespace quizApp
             this.titleStartBtn.UseVisualStyleBackColor = false;
             this.titleStartBtn.Click += new System.EventHandler(this.titleStartBtn_Click);
             // 
-            // Form1
+            // mainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.titleStartBtn);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "mainPage";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.mainPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

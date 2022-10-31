@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace quizApp
 {
-    public partial class Form1 : Form
+    public partial class mainPage : Form
     {
-        public Form1()
+        public mainPage()
         {
             InitializeComponent();
         }
@@ -22,6 +22,11 @@ namespace quizApp
             Form2 form = new Form2();
             form.Show();
             this.Hide();
+        }
+
+        private void mainPage_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

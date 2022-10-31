@@ -19,7 +19,7 @@ namespace quizApp
 
         private void biologyBtn_Click(object sender, EventArgs e)
         {
-            Form3 form = new Form3();
+            biology form = new biology();
             form.Show();
             this.Hide();
         }
@@ -43,6 +43,11 @@ namespace quizApp
             Form1 form = new Form1();
             form.Show();
             this.Hide();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
