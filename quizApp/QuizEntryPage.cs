@@ -10,44 +10,46 @@ using System.Windows.Forms;
 
 namespace quizApp
 {
-    public partial class Form2 : Form
+    public partial class QuizEntryPage : Form
     {
-        public Form2()
+        public QuizEntryPage()
         {
             InitializeComponent();
         }
 
         private void biologyBtn_Click(object sender, EventArgs e)
         {
-            biology form = new biology();
+            BiologyQuiz biology = new BiologyQuiz();
+            biology.setupQuiz();
+            biology form = new biology(biology);
+
             form.Show();
             this.Hide();
         }
 
         private void psychologyBtn_Click(object sender, EventArgs e)
         {
-            Form4 form = new Form4();
+            Psychology form = new Psychology();
             form.Show();
             this.Hide();
         }
 
         private void computerBtn_Click(object sender, EventArgs e)
         {
-            Form5 form = new Form5();
+            ComputerScience form = new ComputerScience();
             form.Show();
             this.Hide();
         }
 
         private void returnTitleBtn_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
+            mainPage form = new mainPage();
             form.Show();
             this.Hide();
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
         }
     }
 }

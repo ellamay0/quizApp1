@@ -13,6 +13,7 @@ namespace quizApp
     public partial class biology : Form
     {
         public BiologyQuiz quiz;
+        int questionNum = 0;
         public biology(BiologyQuiz quiz)
         {
             InitializeComponent();
@@ -21,11 +22,25 @@ namespace quizApp
 
         private void biology_Load(object sender, EventArgs e)
         {
-
+            questionBox.Text = quiz.Questions[questionNum].QuestionText;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void trueButton_Click(object sender, EventArgs e)
         {
+            if(quiz.Questions[questionNum].Answer == true)
+            {
+                quiz.AddOneToScore();
+             
+            }
+            questionBox.Text = quiz.Questions[questionNum +1].QuestionText;
+        }
+
+        private void falseButton_Click(object sender, EventArgs e)
+        {
+            if(quiz.Questions[questionNum].Answer == false)
+            {
+                quiz.AddOneToScore();
+            }
 
         }
     }

@@ -29,46 +29,47 @@ namespace quizApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.trueButton = new System.Windows.Forms.Button();
+            this.falseButton = new System.Windows.Forms.Button();
+            this.questionBox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // trueButton
             // 
-            this.button1.Location = new System.Drawing.Point(383, 248);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "True";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.trueButton.Location = new System.Drawing.Point(383, 248);
+            this.trueButton.Name = "trueButton";
+            this.trueButton.Size = new System.Drawing.Size(75, 23);
+            this.trueButton.TabIndex = 0;
+            this.trueButton.Text = "True";
+            this.trueButton.UseVisualStyleBackColor = true;
+            this.trueButton.Click += new System.EventHandler(this.trueButton_Click);
             // 
-            // button2
+            // falseButton
             // 
-            this.button2.Location = new System.Drawing.Point(193, 248);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Next";
-            this.button2.UseVisualStyleBackColor = true;
+            this.falseButton.Location = new System.Drawing.Point(193, 248);
+            this.falseButton.Name = "falseButton";
+            this.falseButton.Size = new System.Drawing.Size(75, 23);
+            this.falseButton.TabIndex = 1;
+            this.falseButton.Text = "False";
+            this.falseButton.UseVisualStyleBackColor = true;
+            this.falseButton.Click += new System.EventHandler(this.falseButton_Click);
             // 
-            // richTextBox1
+            // questionBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(236, 65);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(210, 148);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
+            this.questionBox.Location = new System.Drawing.Point(236, 65);
+            this.questionBox.Name = "questionBox";
+            this.questionBox.Size = new System.Drawing.Size(210, 148);
+            this.questionBox.TabIndex = 2;
+            this.questionBox.Text = "";
             // 
             // biology
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.questionBox);
+            this.Controls.Add(this.falseButton);
+            this.Controls.Add(this.trueButton);
             this.Name = "biology";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.biology_Load);
@@ -78,8 +79,8 @@ namespace quizApp
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button trueButton;
+        private System.Windows.Forms.Button falseButton;
+        private System.Windows.Forms.RichTextBox questionBox;
     }
 }

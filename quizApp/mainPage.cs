@@ -19,7 +19,7 @@ namespace quizApp
 
         private void titleStartBtn_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
+            QuizEntryPage form = new QuizEntryPage();
             form.Show();
             this.Hide();
         }

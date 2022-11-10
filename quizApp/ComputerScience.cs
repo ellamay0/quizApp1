@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace quizApp
 {
-    public partial class Form5 : Form
+    public partial class ComputerScience : Form
     {
-        public Form5()
+        public ComputerScience()
         {
             InitializeComponent();
         }

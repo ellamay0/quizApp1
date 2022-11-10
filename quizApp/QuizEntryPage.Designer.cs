@@ -1,7 +1,7 @@
 ﻿
 namespace quizApp
 {
-    partial class Form2
+    partial class QuizEntryPage
     {
         /// <summary>
         /// Required designer variable.
