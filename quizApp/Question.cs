@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace quizApp
 {
-     public abstract class Question
+     public class Question
     {
         private string question;
         private bool correctAnswer; //keepping track of what they answered, so we know to aske them again
