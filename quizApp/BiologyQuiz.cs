@@ -49,6 +49,7 @@ namespace quizApp
             Questions.Append(question);
 
             Question question9 = new Question("The emulsion test is how you test for the presence of lipids in a smaple", true);
+            Questions.Append(question);
  
         }
 

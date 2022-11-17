@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BiologyQuiz.cs" />
+    <Compile Include="PsychologyQuiz.cs" />
     <Compile Include="mainPage.cs">
       <SubType>Form</SubType>
     </Compile>
