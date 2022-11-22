@@ -9,7 +9,7 @@ namespace quizApp
      public class Question
     {
         private string question;
-        private bool correctAnswer; //keepping track of what they answered, so we know to aske them again
+        private bool correctAnswer; //keeping track of what they answered, so we know to ask them again
         private bool answer; //is the answer true or false
 
         public Question(string question, bool answer)

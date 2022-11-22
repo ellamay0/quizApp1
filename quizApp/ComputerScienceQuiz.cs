@@ -43,6 +43,7 @@ namespace quizApp
             Questions.Append(question8);
 
             Question question9 = new Question("", true);
-            Questions.Append(question9); 
+            Questions.Append(question9);
         }
+    }
 }

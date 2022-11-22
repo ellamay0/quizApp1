@@ -29,14 +29,20 @@ namespace quizApp
 
         private void psychologyBtn_Click(object sender, EventArgs e)
         {
+            PsychologyQuiz Psychology = new PsychologyQuiz();
+            Psychology.setupQuiz();
             Psychology form = new Psychology();
+
             form.Show();
             this.Hide();
         }
 
         private void computerBtn_Click(object sender, EventArgs e)
         {
-            ComputerScience form = new ComputerScience();
+            ComputerScienceQuiz ComputerScience = new ComputerScienceQuiz();
+            ComputerScience.setupQuiz();
+            ComputerScience form = new ComputerScience(ComputerScience);
+
             form.Show();
             this.Hide();
         }

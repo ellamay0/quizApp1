@@ -30,7 +30,6 @@ namespace quizApp
             if(quiz.Questions[questionNum].Answer == true)
             {
                 quiz.AddOneToScore();
-             
             }
             questionBox.Text = quiz.Questions[questionNum +1].QuestionText;
         }
@@ -41,7 +40,15 @@ namespace quizApp
             {
                 quiz.AddOneToScore();
             }
+            questionBox.Text = quiz.Questions[questionNum + 1].QuestionText;
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            EndPage form = new EndPage();
+            form.Show();
+            this.Hide();
         }
     }
 }
