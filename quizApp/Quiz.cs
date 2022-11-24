@@ -8,19 +8,20 @@ namespace quizApp
 {
     public abstract class Quiz
     {
-        private Question[] questions = new Question[10];
+        public Question[] questions = new Question[10];
         private int score;
 
         public Quiz()
         {
 
         }
+        /*
         public Question[] Questions
         {
-            get { return Questions; }
-            set { Questions = value; }
+            get { return questions; }
+            set { questions = value; }
         }
-
+        */
         public int Score
         {
             get { return score; }

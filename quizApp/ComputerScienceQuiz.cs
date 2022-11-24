@@ -16,34 +16,34 @@ namespace quizApp
         public override void setupQuiz()
         {
             Question question = new Question("A Binary search must be unsorted to find the data item", false);
-            Questions.Append(question);
+            questions.Append(question);
 
             Question question1 = new Question("", false);
-            Questions.Append(question1);
+            questions.Append(question1);
 
             Question question2 = new Question("", true);
-            Questions.Append(question2);
+            questions.Append(question2);
 
             Question question3 = new Question("", false);
-            Questions.Append(question3);
+            questions.Append(question3);
 
             Question question4 = new Question("", true);
-            Questions.Append(question4);
+            questions.Append(question4);
 
             Question question5 = new Question("", true);
-            Questions.Append(question5);
+            questions.Append(question5);
 
             Question question6 = new Question("", true);
-            Questions.Append(question6);
+            questions.Append(question6);
 
             Question question7 = new Question("", false);
-            Questions.Append(question7);
+            questions.Append(question7);
 
             Question question8 = new Question("", false);
-            Questions.Append(question8);
+            questions.Append(question8);
 
             Question question9 = new Question("", true);
-            Questions.Append(question9);
+            questions.Append(question9);
         }
     }
 }

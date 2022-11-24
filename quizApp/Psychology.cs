@@ -22,25 +22,25 @@ namespace quizApp
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            questionBox.Text = quiz.Questions[questionNum].QuestionText;
+            questionBox.Text = quiz.questions[questionNum].QuestionText;
         }
 
         private void trueBtn_Click(object sender, EventArgs e)
         {
-            if (quiz.Questions[questionNum].Answer == true)
+            if (quiz.questions[questionNum].Answer == true)
             {
                 quiz.AddOneToScore();
             }
-            questionBox.Text = quiz.Questions[questionNum + 1].QuestionText;
+            questionBox.Text = quiz.questions[questionNum + 1].QuestionText;
         }
 
         private void falseBtn_Click(object sender, EventArgs e)
         {
-            if (quiz.Questions[questionNum].Answer == false)
+            if (quiz.questions[questionNum].Answer == false)
             {
                 quiz.AddOneToScore();
             }
-            questionBox.Text = quiz.Questions[questionNum + 1].QuestionText;
+            questionBox.Text = quiz.questions[questionNum + 1].QuestionText;
         }
 
         private void finishQuiz_Click(object sender, EventArgs e)
@@ -48,6 +48,11 @@ namespace quizApp
             EndPage form = new EndPage();
             form.Show();
             this.Hide();
+        }
+
+        private void Psychology_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

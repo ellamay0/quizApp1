@@ -90,6 +90,7 @@ namespace quizApp
             this.Controls.Add(this.finishQuiz);
             this.Name = "Psychology";
             this.Text = "Form4";
+            this.Load += new System.EventHandler(this.Psychology_Load);
             this.ResumeLayout(false);
 
         }
