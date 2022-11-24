@@ -38,7 +38,7 @@ namespace quizApp
             Question question7 = new Question("83% of participants in MIlgrams shock Experiment went up to the highest voltage of 450V", false);
             //questions.Append(question7);
 
-            Question question8 = new Question("A null hypothesis is a hypothesis that states theres no difference", true);
+            Question question8 = new Question("A null hypothesis is a hypothesis that states theres no difference", true); 
             //questions.Append(question8);
 
             Question question9 = new Question("Short term memory lasts 2 days ", false);
