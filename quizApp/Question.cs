@@ -21,7 +21,7 @@ namespace quizApp
 
         public string QuestionText
         {
-            get { return QuestionText; }
+            get { return question; }
         }
         public bool Answer
         {

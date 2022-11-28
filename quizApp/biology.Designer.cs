@@ -37,29 +37,33 @@ namespace quizApp
             // 
             // trueButton
             // 
-            this.trueButton.Location = new System.Drawing.Point(383, 248);
+            this.trueButton.BackColor = System.Drawing.SystemColors.Window;
+            this.trueButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trueButton.Location = new System.Drawing.Point(181, 257);
             this.trueButton.Name = "trueButton";
-            this.trueButton.Size = new System.Drawing.Size(75, 23);
+            this.trueButton.Size = new System.Drawing.Size(142, 38);
             this.trueButton.TabIndex = 0;
             this.trueButton.Text = "True";
-            this.trueButton.UseVisualStyleBackColor = true;
+            this.trueButton.UseVisualStyleBackColor = false;
             this.trueButton.Click += new System.EventHandler(this.trueButton_Click);
             // 
             // falseButton
             // 
-            this.falseButton.Location = new System.Drawing.Point(193, 248);
+            this.falseButton.BackColor = System.Drawing.SystemColors.Window;
+            this.falseButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.falseButton.Location = new System.Drawing.Point(464, 257);
             this.falseButton.Name = "falseButton";
-            this.falseButton.Size = new System.Drawing.Size(75, 23);
+            this.falseButton.Size = new System.Drawing.Size(142, 40);
             this.falseButton.TabIndex = 1;
             this.falseButton.Text = "False";
-            this.falseButton.UseVisualStyleBackColor = true;
+            this.falseButton.UseVisualStyleBackColor = false;
             this.falseButton.Click += new System.EventHandler(this.falseButton_Click);
             // 
             // questionBox
             // 
-            this.questionBox.Location = new System.Drawing.Point(236, 65);
+            this.questionBox.Location = new System.Drawing.Point(181, 65);
             this.questionBox.Name = "questionBox";
-            this.questionBox.Size = new System.Drawing.Size(210, 148);
+            this.questionBox.Size = new System.Drawing.Size(425, 147);
             this.questionBox.TabIndex = 2;
             this.questionBox.Text = "";
             // 
@@ -67,7 +71,7 @@ namespace quizApp
             // 
             this.finishQuizBtn.BackColor = System.Drawing.SystemColors.Window;
             this.finishQuizBtn.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.finishQuizBtn.Location = new System.Drawing.Point(656, 402);
+            this.finishQuizBtn.Location = new System.Drawing.Point(336, 354);
             this.finishQuizBtn.Name = "finishQuizBtn";
             this.finishQuizBtn.Size = new System.Drawing.Size(132, 36);
             this.finishQuizBtn.TabIndex = 3;

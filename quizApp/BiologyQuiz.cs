@@ -21,34 +21,34 @@ namespace quizApp
             }
             */
             Question question = new Question("Natural selection is survival of the fittest", true);
-            questions.Append(question);
+            questions.Add(question);
 
             Question question1 = new Question("A cell membrane has a phospholipid trilayer", false);
-            questions.Append(question1);
+            questions.Add(question1);
 
             Question question2 = new Question("Products of photosynthesis are carbon and water", false);
-            questions.Append(question2);
+            questions.Add(question2);
 
             Question question3 = new Question("Vaccines contain dead or weakned pathogens", true);
-            questions.Append(question3);
+            questions.Add(question3);
 
             Question question4= new Question("The cardiac cycle has 3 stages atrail systole, ventricular systole  and diastole", true);
-            questions.Append(question4);
+            questions.Add(question4);
 
             Question question5 = new Question("Immobilized enzymes are free to move around", false);
-            questions.Append(question5);
+            questions.Add(question5);
 
             Question question6 = new Question("The cardiac cycle has 3 stages atrail systole, ventricular systole  and diastole", true);
-            questions.Append(question6);
+            questions.Add(question6);
 
             Question question7 = new Question("Fish have gill lamelle which aid digestion", false);
-            questions.Append(question7);
+            questions.Add(question7);
 
             Question question8 = new Question("Plant cells and bacterium have a nuclues", false);
-            questions.Append(question8);
+            questions.Add(question8);
 
             Question question9 = new Question("The emulsion test is how you test for the presence of lipids in a smaple", true);
-            questions.Append(question9);
+            questions.Add(question9);
  
         }
 

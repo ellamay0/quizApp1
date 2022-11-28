@@ -18,31 +18,31 @@ namespace quizApp
             Question question = new Question("The brain is divided into 4 lobes: temporal lobe, occipital lobe, fronatl lobe, parietal lobe", true);
 
             Question question1 = new Question("phobias can be treated using flooding", true);
-            //questions.Append(question1);
+            questions.Add(question1);
 
             Question question2 = new Question("An example of an infaraidian rhythm is the menstrual cycle", true);
-            //questions.Append(question2);
+            questions.Add(question2);
 
             Question question3 = new Question("Freud suggested the personality is split into 3 parts: the id, ego, and megaego", false);
-            //questions.Append(question3);
+            questions.Add(question3);
 
             Question question4 = new Question("The biological approach suggests that everything biological is first psychological ", false);
-           // questions.Append(question4);
+            questions.Add(question4);
 
             Question question5 = new Question("The Autonomic nrevous system is divided into the sympathetic and parasympathetic subsections", true);
-            //questions.Append(question5);
+            questions.Add(question5);
 
             Question question6 = new Question("Informational social influence is conforming to whoever you believe has the best information", true);
-            //questions.Append(question6);
+            questions.Add(question6);
 
             Question question7 = new Question("83% of participants in MIlgrams shock Experiment went up to the highest voltage of 450V", false);
-            //questions.Append(question7);
+            questions.Add(question7);
 
             Question question8 = new Question("A null hypothesis is a hypothesis that states theres no difference", true); 
-            //questions.Append(question8);
+            questions.Add(question8);
 
             Question question9 = new Question("Short term memory lasts 2 days ", false);
-            //questions.Append(question9);
+            questions.Add(question9);
 
             questions[0] = question;
             for(int i = 0; i < 10; i++)
