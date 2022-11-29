@@ -16,6 +16,7 @@ namespace quizApp
         public override void setupQuiz()
         {
             Question question = new Question("The brain is divided into 4 lobes: temporal lobe, occipital lobe, fronatl lobe, parietal lobe", true);
+            questions.Add(question);
 
             Question question1 = new Question("phobias can be treated using flooding", true);
             questions.Add(question1);

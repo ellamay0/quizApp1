@@ -27,40 +27,44 @@ namespace quizApp
 
         private void trueButton_Click(object sender, EventArgs e)
         {
-            if(questionNum >= quiz.questions.Count) //make a function to optimise 
+            if (questionNum + 1 >= quiz.questions.Count) //make a function to optimise 
             {
                 EndPage form = new EndPage();
                 form.Show();
                 this.Hide();
             }
-           
-            if (quiz.questions[questionNum].Answer == true)
+            else
             {
-                quiz.AddOneToScore();
+                if (quiz.questions[questionNum].Answer == true)
+                {
+                    quiz.AddOneToScore();
+                }
+                questionNum = questionNum + 1;
+                questionBox.Text = quiz.questions[questionNum].QuestionText;
             }
-            questionBox.Text = quiz.questions[questionNum + 1].QuestionText;
-            questionNum = questionNum + 1;
-
-
         }
 
 
         private void falseButton_Click(object sender, EventArgs e) 
         {
-            if(questionNum >= quiz.questions.Count) 
+            if(questionNum+1 >= quiz.questions.Count) 
             {
                 EndPage form = new EndPage();
                 form.Show();
                 this.Hide();
+            } 
+            else
+            {
+                if (quiz.questions[questionNum].Answer == false)
+                {
+                    quiz.AddOneToScore();
+                }
+                questionNum = questionNum + 1;
+
+                questionBox.Text = quiz.questions[questionNum].QuestionText;
             }
             
-             if (quiz.questions[questionNum].Answer == false)
-               {
-                 quiz.AddOneToScore();
-               }
-             questionBox.Text = quiz.questions[questionNum + 1].QuestionText;
-             questionNum = questionNum + 1;
-            
+
         }
     }
 }
