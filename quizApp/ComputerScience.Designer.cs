@@ -29,23 +29,10 @@ namespace quizApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.finishQuizBtn = new System.Windows.Forms.Button();
             this.questionBox = new System.Windows.Forms.RichTextBox();
             this.trueBtn = new System.Windows.Forms.Button();
             this.falseBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // finishQuizBtn
-            // 
-            this.finishQuizBtn.BackColor = System.Drawing.SystemColors.Window;
-            this.finishQuizBtn.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.finishQuizBtn.Location = new System.Drawing.Point(656, 402);
-            this.finishQuizBtn.Name = "finishQuizBtn";
-            this.finishQuizBtn.Size = new System.Drawing.Size(132, 36);
-            this.finishQuizBtn.TabIndex = 2;
-            this.finishQuizBtn.Text = "Finish Quiz!";
-            this.finishQuizBtn.UseVisualStyleBackColor = false;
-            this.finishQuizBtn.Click += new System.EventHandler(this.finishQuizBtn_Click);
             // 
             // questionBox
             // 
@@ -87,7 +74,6 @@ namespace quizApp
             this.Controls.Add(this.falseBtn);
             this.Controls.Add(this.trueBtn);
             this.Controls.Add(this.questionBox);
-            this.Controls.Add(this.finishQuizBtn);
             this.Name = "ComputerScience";
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
@@ -96,8 +82,6 @@ namespace quizApp
         }
 
         #endregion
-
-        private System.Windows.Forms.Button finishQuizBtn;
         private System.Windows.Forms.RichTextBox questionBox;
         private System.Windows.Forms.Button trueBtn;
         private System.Windows.Forms.Button falseBtn;

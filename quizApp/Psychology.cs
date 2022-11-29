@@ -32,6 +32,7 @@ namespace quizApp
                 quiz.AddOneToScore();
             }
             questionBox.Text = quiz.questions[questionNum + 1].QuestionText;
+            questionNum = questionNum + 1;
         }
 
         private void falseBtn_Click(object sender, EventArgs e)
@@ -41,6 +42,7 @@ namespace quizApp
                 quiz.AddOneToScore();
             }
             questionBox.Text = quiz.questions[questionNum + 1].QuestionText;
+            questionNum = questionNum + 1;
         }
 
         private void finishQuiz_Click(object sender, EventArgs e)

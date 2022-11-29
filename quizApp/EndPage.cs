@@ -28,5 +28,10 @@ namespace quizApp
             form.Show();
             this.Hide();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

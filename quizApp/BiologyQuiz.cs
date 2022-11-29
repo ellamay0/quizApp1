@@ -38,7 +38,7 @@ namespace quizApp
             Question question5 = new Question("Immobilized enzymes are free to move around", false);
             questions.Add(question5);
 
-            Question question6 = new Question("The cardiac cycle has 3 stages atrail systole, ventricular systole  and diastole", true);
+            Question question6 = new Question("The nervous system is split into the central nervous system and the peripheral nervous system", true);
             questions.Add(question6);
 
             Question question7 = new Question("Fish have gill lamelle which aid digestion", false);
@@ -47,7 +47,7 @@ namespace quizApp
             Question question8 = new Question("Plant cells and bacterium have a nuclues", false);
             questions.Add(question8);
 
-            Question question9 = new Question("The emulsion test is how you test for the presence of lipids in a smaple", true);
+            Question question9 = new Question("The emulsion test is how you test for the presence of lipids in a sample", true);
             questions.Add(question9);
  
         }

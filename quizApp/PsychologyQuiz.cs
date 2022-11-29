@@ -44,11 +44,7 @@ namespace quizApp
             Question question9 = new Question("Short term memory lasts 2 days ", false);
             questions.Add(question9);
 
-            questions[0] = question;
-            for(int i = 0; i < 10; i++)
-            {
-                questions[i] = question1;
-            }
+            
 
         }
     }

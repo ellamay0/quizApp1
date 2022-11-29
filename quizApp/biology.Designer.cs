@@ -32,7 +32,6 @@ namespace quizApp
             this.trueButton = new System.Windows.Forms.Button();
             this.falseButton = new System.Windows.Forms.Button();
             this.questionBox = new System.Windows.Forms.RichTextBox();
-            this.finishQuizBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // trueButton
@@ -61,30 +60,19 @@ namespace quizApp
             // 
             // questionBox
             // 
+            this.questionBox.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.questionBox.Location = new System.Drawing.Point(181, 65);
             this.questionBox.Name = "questionBox";
             this.questionBox.Size = new System.Drawing.Size(425, 147);
             this.questionBox.TabIndex = 2;
             this.questionBox.Text = "";
-            // 
-            // finishQuizBtn
-            // 
-            this.finishQuizBtn.BackColor = System.Drawing.SystemColors.Window;
-            this.finishQuizBtn.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.finishQuizBtn.Location = new System.Drawing.Point(336, 354);
-            this.finishQuizBtn.Name = "finishQuizBtn";
-            this.finishQuizBtn.Size = new System.Drawing.Size(132, 36);
-            this.finishQuizBtn.TabIndex = 3;
-            this.finishQuizBtn.Text = "Finish Quiz!";
-            this.finishQuizBtn.UseVisualStyleBackColor = false;
-            this.finishQuizBtn.Click += new System.EventHandler(this.button1_Click);
+           
             // 
             // biology
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.finishQuizBtn);
             this.Controls.Add(this.questionBox);
             this.Controls.Add(this.falseButton);
             this.Controls.Add(this.trueButton);
@@ -100,6 +88,5 @@ namespace quizApp
         private System.Windows.Forms.Button trueButton;
         private System.Windows.Forms.Button falseButton;
         private System.Windows.Forms.RichTextBox questionBox;
-        private System.Windows.Forms.Button finishQuizBtn;
     }
 }
