@@ -66,5 +66,10 @@ namespace quizApp
             
 
         }
+
+        private void questionBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

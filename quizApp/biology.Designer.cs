@@ -66,7 +66,7 @@ namespace quizApp
             this.questionBox.Size = new System.Drawing.Size(425, 147);
             this.questionBox.TabIndex = 2;
             this.questionBox.Text = "";
-           
+            this.questionBox.TextChanged += new System.EventHandler(this.questionBox_TextChanged);
             // 
             // biology
             // 

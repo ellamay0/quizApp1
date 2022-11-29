@@ -31,7 +31,7 @@ namespace quizApp
         {
             PsychologyQuiz Psychology = new PsychologyQuiz();
             Psychology.setupQuiz();
-            Psychology form = new Psychology();
+            Psychology form = new Psychology(Psychology);
 
             form.Show();
             this.Hide();
@@ -56,6 +56,11 @@ namespace quizApp
 
         private void Form2_Load(object sender, EventArgs e)
         {
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

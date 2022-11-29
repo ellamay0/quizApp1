@@ -44,9 +44,6 @@ namespace quizApp
 
             Question question9 = new Question("Short term memory lasts 2 days ", false);
             questions.Add(question9);
-
-            
-
         }
     }
 }

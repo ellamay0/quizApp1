@@ -48,6 +48,7 @@ namespace quizApp
             this.label1.Size = new System.Drawing.Size(783, 65);
             this.label1.TabIndex = 0;
             this.label1.Text = "_____________ Quiz App _____________";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -127,7 +128,7 @@ namespace quizApp
             this.returnTitleBtn.UseVisualStyleBackColor = false;
             this.returnTitleBtn.Click += new System.EventHandler(this.returnTitleBtn_Click);
             // 
-            // Form2
+            // QuizEntryPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -140,7 +141,7 @@ namespace quizApp
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
-            this.Name = "Form2";
+            this.Name = "QuizEntryPage";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);

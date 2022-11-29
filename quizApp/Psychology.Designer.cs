@@ -36,6 +36,7 @@ namespace quizApp
             // 
             // questionBox
             // 
+            this.questionBox.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.questionBox.Location = new System.Drawing.Point(207, 73);
             this.questionBox.Name = "questionBox";
             this.questionBox.Size = new System.Drawing.Size(415, 169);

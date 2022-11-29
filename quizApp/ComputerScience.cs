@@ -27,23 +27,44 @@ namespace quizApp
 
         private void trueBtn_Click(object sender, EventArgs e)
         {
-            if (quiz.questions[questionNum].Answer == true)
+            if (questionNum + 1 >= quiz.questions.Count)
             {
-                quiz.AddOneToScore();
+                EndPage form = new EndPage();
+                form.Show();
+                this.Hide();
             }
-            questionBox.Text = quiz.questions[questionNum + 1].QuestionText;
-            questionNum = questionNum + 1;
+            else
+            {
+                if (quiz.questions[questionNum].Answer == true)
+                {
+                    quiz.AddOneToScore();
+                }
+                questionNum = questionNum + 1;
+
+                questionBox.Text = quiz.questions[questionNum].QuestionText;
+            }
+
         }
 
-       
+
         private void falseBtn_Click(object sender, EventArgs e)
         {
-            if (quiz.questions[questionNum].Answer == false)
+            if (questionNum + 1 >= quiz.questions.Count)
             {
-                quiz.AddOneToScore();
+                EndPage form = new EndPage();
+                form.Show();
+                this.Hide();
             }
-            questionBox.Text = quiz.questions[questionNum + 1].QuestionText;
-            questionNum = questionNum + 1;
+            else
+            {
+                if (quiz.questions[questionNum].Answer == false)
+                {
+                    quiz.AddOneToScore();
+                }
+                questionNum = questionNum + 1;
+                questionBox.Text = quiz.questions[questionNum].QuestionText;
+            }
+
         }
 
         private void finishQuizBtn_Click(object sender, EventArgs e)
@@ -53,5 +74,6 @@ namespace quizApp
             this.Hide();
         }
 
+       
     }
 }
