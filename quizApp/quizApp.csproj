@@ -47,7 +47,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BiologyQuiz.cs" />
+    <Compile Include="biologyTopic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="biologyTopic.Designer.cs">
+      <DependentUpon>biologyTopic.cs</DependentUpon>
+    </Compile>
     <Compile Include="ComputerScienceQuiz.cs" />
+    <Compile Include="computerScienceTopics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="computerScienceTopics.Designer.cs">
+      <DependentUpon>computerScienceTopics.cs</DependentUpon>
+    </Compile>
     <Compile Include="EndPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +72,12 @@
     </Compile>
     <Compile Include="mainPage.Designer.cs">
       <DependentUpon>mainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="psychologyTopics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="psychologyTopics.Designer.cs">
+      <DependentUpon>psychologyTopics.cs</DependentUpon>
     </Compile>
     <Compile Include="QuizEntryPage.cs">
       <SubType>Form</SubType>
@@ -92,11 +110,20 @@
     <EmbeddedResource Include="biology.resx">
       <DependentUpon>biology.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="biologyTopic.resx">
+      <DependentUpon>biologyTopic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="computerScienceTopics.resx">
+      <DependentUpon>computerScienceTopics.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EndPage.resx">
       <DependentUpon>EndPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainPage.resx">
       <DependentUpon>mainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="psychologyTopics.resx">
+      <DependentUpon>psychologyTopics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuizEntryPage.resx">
       <DependentUpon>QuizEntryPage.cs</DependentUpon>
