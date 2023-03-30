@@ -31,7 +31,7 @@ namespace quizApp
         {
             if (questionNum + 1 >= quiz.questions.Count) //make a function to optimise 
             {
-                EndPage form = new EndPage();
+                EndPage form = new EndPage(quiz);
                 form.Show();
                 this.Hide();
             }
@@ -40,6 +40,9 @@ namespace quizApp
                 if (quiz.questions[questionNum].Answer == true)
                 {
                     quiz.AddOneToScore();
+                } else
+                {
+                    quiz.wrongquestions.Add(quiz.questions[questionNum]);
                 }
                 questionNum = questionNum + 1;
                 questionBox.Text = quiz.questions[questionNum].QuestionText;
@@ -50,7 +53,7 @@ namespace quizApp
         {
             if (questionNum + 1 >= quiz.questions.Count)
             {
-                EndPage form = new EndPage();
+                EndPage form = new EndPage(quiz);
                 form.Show();
                 this.Hide();
             }
@@ -59,6 +62,10 @@ namespace quizApp
                 if (quiz.questions[questionNum].Answer == false)
                 {
                     quiz.AddOneToScore();
+                }
+                else
+                {
+                    quiz.wrongquestions.Add(quiz.questions[questionNum]);
                 }
                 questionNum = questionNum + 1;
 

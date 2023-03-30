@@ -30,10 +30,10 @@ namespace quizApp
         private void InitializeComponent()
         {
             this.homeScreenBtn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.incorrectAnswers = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.score = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -49,13 +49,13 @@ namespace quizApp
             this.homeScreenBtn.UseVisualStyleBackColor = false;
             this.homeScreenBtn.Click += new System.EventHandler(this.homeScreenBtn_Click);
             // 
-            // textBox1
+            // incorrectAnswers
             // 
-            this.textBox1.Location = new System.Drawing.Point(65, 204);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(661, 172);
-            this.textBox1.TabIndex = 1;
+            this.incorrectAnswers.Location = new System.Drawing.Point(65, 204);
+            this.incorrectAnswers.Multiline = true;
+            this.incorrectAnswers.Name = "incorrectAnswers";
+            this.incorrectAnswers.Size = new System.Drawing.Size(661, 172);
+            this.incorrectAnswers.TabIndex = 1;
             // 
             // label1
             // 
@@ -78,15 +78,15 @@ namespace quizApp
             this.label2.TabIndex = 3;
             this.label2.Text = "Incorrect answers:";
             // 
-            // textBox2
+            // score
             // 
-            this.textBox2.Location = new System.Drawing.Point(381, 120);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(138, 40);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.score.Location = new System.Drawing.Point(381, 120);
+            this.score.Multiline = true;
+            this.score.Name = "score";
+            this.score.Size = new System.Drawing.Size(138, 40);
+            this.score.TabIndex = 4;
+            this.score.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.score.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label3
             // 
@@ -104,13 +104,14 @@ namespace quizApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.score);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.incorrectAnswers);
             this.Controls.Add(this.homeScreenBtn);
             this.Name = "EndPage";
             this.Text = "EndPage";
+            this.Load += new System.EventHandler(this.EndPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,10 +120,10 @@ namespace quizApp
         #endregion
 
         private System.Windows.Forms.Button homeScreenBtn;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox incorrectAnswers;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox score;
         private System.Windows.Forms.Label label3;
     }
 }

@@ -29,7 +29,7 @@ namespace quizApp
         {
             if (questionNum + 1 >= quiz.questions.Count) //make a function to optimise 
             {
-                EndPage form = new EndPage();
+                EndPage form = new EndPage(quiz);
                 form.Show();
                 this.Hide();
             }
@@ -49,7 +49,7 @@ namespace quizApp
         {
             if(questionNum+1 >= quiz.questions.Count) 
             {
-                EndPage form = new EndPage();
+                EndPage form = new EndPage(quiz);
                 form.Show();
                 this.Hide();
             } 

@@ -10,10 +10,13 @@ using System.Windows.Forms;
 
 namespace quizApp
 {
+
     public partial class EndPage : Form
     {
-        public EndPage()
+        Quiz quiz;
+        public EndPage(Quiz quiz)
         {
+            this.quiz = quiz;
             InitializeComponent();
         }
 
@@ -32,6 +35,16 @@ namespace quizApp
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void EndPage_Load(object sender, EventArgs e)
+        {
+            score.Text = ""+quiz.Score;
+            foreach(Question wrongQ in quiz.wrongquestions)
+            {
+                incorrectAnswers.Text += wrongQ.QuestionText+",   ";
+
+            }
         }
     }
 }

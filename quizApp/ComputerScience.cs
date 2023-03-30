@@ -29,7 +29,7 @@ namespace quizApp
         {
             if (questionNum + 1 >= quiz.questions.Count)
             {
-                EndPage form = new EndPage();
+                EndPage form = new EndPage(quiz);
                 form.Show();
                 this.Hide();
             }
@@ -51,7 +51,7 @@ namespace quizApp
         {
             if (questionNum + 1 >= quiz.questions.Count)
             {
-                EndPage form = new EndPage();
+                EndPage form = new EndPage(quiz);
                 form.Show();
                 this.Hide();
             }
@@ -69,7 +69,7 @@ namespace quizApp
 
         private void finishQuizBtn_Click(object sender, EventArgs e)
         {
-            EndPage form = new EndPage();
+            EndPage form = new EndPage(quiz);
             form.Show();
             this.Hide();
         }

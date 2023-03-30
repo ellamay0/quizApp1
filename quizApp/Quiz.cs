@@ -9,6 +9,8 @@ namespace quizApp
     public abstract class Quiz
     {
         public List<Question> questions = new List<Question>();
+        public List<Question> wrongquestions = new List<Question>();
+
         private int score;
 
         public Quiz()
